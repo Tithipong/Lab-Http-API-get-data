@@ -21,9 +21,14 @@ axios(config)
 
 <template>
   <div class="container">
+    <img
+      src="https://lumiere-a.akamaihd.net/v1/images/header-starwars-mobile_07afc302.jpeg?region=0,0,640,400"
+      alt=""
+    />
     <h1>Star Wars API</h1>
+
     <table>
-      <thead>
+      <thead align="left">
         <th>Name</th>
         <th>Birth_year</th>
         <th>Gender</th>
@@ -43,5 +48,23 @@ axios(config)
     </table>
   </div>
 </template>
+<style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-<style scoped></style>
+table {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+</style>
